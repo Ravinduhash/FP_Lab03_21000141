@@ -1,11 +1,15 @@
 object Main {
   def main(args: Array[String]): Unit = {
-    var a = 0;
-    var b = 0;
+    var num1 = 30;
+    var num2 = 3;
 
-    // for loop execution with a range
-    for (a <- 1 to 3) {
-      println("Value of a: " + a);
+    def avg(x:Int, y:Int)={
+      val temp = (x+y)/2
+      println(temp)
+      val n = BigDecimal(1.234)
+      n.setScale(2, BigDecimal.RoundingMode.HALF_UP)
     }
+    println(avg(num1,num2))
+
   }
 }
