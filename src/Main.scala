@@ -1,15 +1,17 @@
 object Main {
   def main(args: Array[String]): Unit = {
-    var num1 = 30;
-    var num2 = 3;
+    var num1 = 20.00;
+    var num2 = 3.00;
 
-    def avg(x:Int, y:Int)={
-      val temp = (x+y)/2
-      println(temp)
-      val n = BigDecimal(1.234)
-      n.setScale(2, BigDecimal.RoundingMode.HALF_UP)
+    def avg(x:Float, y:Float):Float={
+      ((x+y)/2)
+
     }
-    println(avg(num1,num2))
+    def round(x:Float): Float = {
+      val n = BigDecimal(x)
+      n.setScale(2, BigDecimal.RoundingMode.HALF_UP).toFloat
+    }
+    println(round(avg(num1.toFloat,num2.toFloat)))
 
   }
 }
