@@ -4,7 +4,7 @@ object Q3 extends App {
 
   def avg(x: Float, y: Float): Float = {
     ((x + y) / 2)
-
+//    ((x + y + 4) / 3)
   }
 
   def round(x: Float): Float = {

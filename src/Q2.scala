@@ -1,6 +1,8 @@
 import scala.io.StdIn._
 object Q2 extends App{
-  def fun(arr:List[String])=arr.filter(_.length>5)
+  def fun(arr:List[String])={
+    arr.filter(_.length>5)
+  }
   //  var newlist = new Array[String](0)
 
   //  var n = readLine("Please enter no of strings: ").toInt
